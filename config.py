@@ -1,9 +1,7 @@
+import os
 
-BOT_TOKEN = "8526411709:AAEqRQVKznUeqAs6MIPfDmvqzB6-L8UeMFw"
-
-YANDEX_API_KEY = "PASTE_YANDEX_KEY_HERE"
-
-FOLDER_ID = "b1g53djpnj4fl8gt2ioi"
-
-ADMIN_ID = 7185701655
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+YANDEX_API_KEY = os.getenv("YANDEX_API_KEY")
+FOLDER_ID = os.getenv("FOLDER_ID")
+ADMIN_ID = int(os.getenv("ADMIN_ID", 0))
 
